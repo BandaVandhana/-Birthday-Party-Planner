@@ -8,3 +8,10 @@ Login page:
 
 Signup page:
 ![image](https://github.com/BandaVandhana/-Birthday-Party-Planner/assets/153309442/a13f3ffe-05b4-4f59-946e-20fd12254759)
+
+Payment page:
+![image](https://github.com/BandaVandhana/-Birthday-Party-Planner/assets/153309442/ea84d94f-2084-49ad-ad64-2f4a6af3142b)
+
+Please feel free to refer to the codes attached for a better understanding on how particular properties have been used to design the pages.
+
+
