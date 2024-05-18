@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cakes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+/* Add your styles here */
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("egbg.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+html {
+  height: 100%;
+  background-image: white;
+}
+
+#container {
+ background-color: #b4b4b4;
+ background-size: cover;
+ background-position: center;
+ height: 90vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+
+nav {
+ background-color: black;
+}
+
+nav ul {
+  background-color: #333;
+}
+
+nav ul li {
+  display: inline-block;
+  float: right;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-bottom: 4vmin;
+  height: 90vh;
+  width: 100%;
+  background: #ccccff;
+  color: #3a3535;
+}
+
+.cafe-inner {
+  display: inline-block;
+  font-family: 'Sofia';
+  font-size: 150px;
+  color: #efefef;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 100px;
+  width: auto;
+  padding: 100px;
+  background: #ccccff;
+  color: black;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.col-1 a, .col-3 a, .col-2 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  color: black;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 425px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 25px 0 50px;
+}
+
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #ffdc12;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer .column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .column h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer .column a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.footer .column form input {
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  color: black;
+}
+
+.footer .column form button {
+  width: 25%;
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #ccccff;
+  color: black;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  height: 100vh;
+}
+
+.containers > div {
+  border: 5px solid;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+</style>
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+<!-- Links (sit on top) -->
+<nav>
+  <ul>
+    <li style="float:left;">
+      <a style="font-family: Sofia; font-size:20px;">Happi Hub</a>
+    </li>
+    <li><a href="draft.html#follow">Follow Us</a></li>
+    <li><a href="draft.html#reviews">Reviews</a></li>
+    <li><a href="draft.html#services">Services</a></li>
+    <li><a href="draft.html#themes">Themes</a></li>
+  </ul>
+</nav>
+
+<!-- Header with image -->
+<div id="app">
+  <div class="cafe">
+    <div class="cafe-inner">Cakes</div>
+  </div>
+  <div class="image">
+    <img src="cake1.jpg" alt='' style="height:743px; float:right; opacity:0.8;">
+  </div>
+</div>
+<br>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup1')"><img src="barbie_t.jpg" alt="barbie" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Barbie</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup2')"><img src="mermaid_t.jpg" alt="mermaid" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Mermaid</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup3')"><img src="car_t.jpg" alt="cars" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Cars</b></p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup4')"><img src="pokemon_t.jpg" alt="pokemon" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Pokemon</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup5')"><img src="harrypotter_t.jpg" alt="harrypotter" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Harry Potter</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup6')"></a><img src="kpop_t.jpg" alt="kpop" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Kpop</b></p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-third w3-container">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup7')"><img src="marvel_t.jpg" alt="marvel" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Marvel</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup8')"><img src="image.png" alt="taylor" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Taylor Swift</b></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <center><a href="javascript:void(0)" class="popup-trigger" onclick="openPopup('popup9')"><img src="Designer.jpeg" alt="anime" style="width:80%;border-radius: 10px;" class="w3-hover-opacity"></a></center>
+    <div class="w3-container w3-white">
+      <p style="text-align: center;"><b>Anime</b></p>
+    </div>
+  </div>
+</div>
+<br.
+<p></p>
+<br>
+<label for="toggleSwitch" style="font-size:25px">Eggless</label>
+<label class="switch">
+  <input type="checkbox" id="toggleSwitch">
+  <span class="slider round"></span>
+</label>
+<br>
+
+<br>
+<footer id="follow">
+  <div class="footer">
+    <div class="col-1">
+      <h3>Useful links</h3>
+      <a href="#themes">Themes</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#follow">Follow Us</a>
+    </div>
+    <div class="col-2">
+      <h3>Our Happy Customers</h3>
+      <form>
+        <input type="text" placeholder="Enter your reviews">
+        <br>
+        <button type="submit"><a href="thankyou.html" target="_blank">Send</a></button>
+      </form>
+    </div>
+    <div class="col-3">
+      <h3>Follow Us</h3>
+      <p>Let's bring the magic together</p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+  </div>
+  <!--popup boxes-->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Barbie</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup1')">&times;</a>
+      <div class="content">
+          Choose cake weight:
+          <ul>
+            <li><button class="js-add" data-pr-name="500g barbie cake" data-pr-price=500>
+              <p style="font-size: 15px;">500 g (₹750)</p>
+              <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button></li><br>
+            <li><button class="js-add" data-pr-name="1000g barbie cake" data-pr-price=1300>
+              <p style="font-size: 15px;">1000 g (₹1300)</p>
+              <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button></li><br>
+            <li><button class="js-add" data-pr-name="1500g barbie cake" data-pr-price=2000>
+              <p style="font-size: 15px;">1500 g (₹2000)</p>
+              <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button></li><br>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup2" class="overlay">
+    <div class="popup">
+      <h2>mermaid</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup2')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g mermaid cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g mermaid cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g mermaid cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup3" class="overlay">
+    <div class="popup">
+      <h2>cars</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup3')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button  class="js-add" data-pr-name="500g cars cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g cars cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g cars cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup4" class="overlay">
+    <div class="popup">
+      <h2>pokemon</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup4')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g pokemon cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g pokemon cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g pokemon cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup5" class="overlay">
+    <div class="popup">
+      <h2>Harry potter</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup5')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g HarryPotter cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g HarryPotter cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g HarryPotter cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup6" class="overlay">
+    <div class="popup">
+      <h2>Kpop</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup6')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g Kpop cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g Kpop cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g Kpop cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup7" class="overlay">
+    <div class="popup">
+      <h2>Marvel</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup7')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g Marvel cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g Marvel cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g Marvel cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup8" class="overlay">
+    <div class="popup">
+      <h2>Taylor swift</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup8')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g TaylorSwift cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g TaylorSwift cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g cars cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="popup9" class="overlay">
+    <div class="popup">
+      <h2>Anime</h2>
+      <a class="close" href="javascript:void(0)" onclick="closePopup('popup9')">&times;</a>
+      <div class="content">
+        Choose cake weight:
+        <ul>
+          <li><button class="js-add" data-pr-name="500g Anime cake" data-pr-price=500>
+            <p style="font-size: 15px;">500 g (₹750)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 30" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1000g Anime cake" data-pr-price=1300>
+            <p style="font-size: 15px;">1000 g (₹1300)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+          <li><button class="js-add" data-pr-name="1500g cars cake" data-pr-price=2000>
+            <p style="font-size: 15px;">1500 g (₹2000)</p>
+            <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button></li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a63424764d.js" crossorigin="anonymous"></script>
+<script src="cakes.js"></script>
+
+<script src="/checkout/cart.js"></script>
+
+<script src="/checkout/cakes_add.js"></script>
+
+</script>
+</body>
+</html>
