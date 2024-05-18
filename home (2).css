@@ -72,8 +72,8 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding-bottom: 4vmin;
-  height: 90vh;
+  
+  height: 50%;
   width: 100%;
   background:#ccccff ;
   color: #3a3535;
